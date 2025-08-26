@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caneta AB - A Revolução dos Lentos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🚀 Caneta AB 🚀</h1>
+    <p class="subtitle">Escreve. Some. Zero manchas!</p>
+    
+    <div class="explosao">💥✨ PUF! ✨💥</div>
+    
+    <p class="sarcasmo">Criada especialmente <br> para aqueles alunos que demoram para copiar matérias ficarem espertos. 👀</p>
+    
+    <p class="extra">Não conseguiu copiar a tempo? Problema seu. 😎</p>
+    
+    <button class="cta" onclick="playSound()">Testar a magia!</button>
+  </div>
+
+  <audio id="sound" src="https://www.soundjay.com/button/sounds/button-10.mp3"></audio>
+
+  <script>
+    function playSound() {
+      document.getElementById('sound').play();
+      document.querySelector('.explosao').classList.add('boom');
+      setTimeout(() => {
+        document.querySelector('.explosao').classList.remove('boom');
+      }, 1500);
+    }
+  </script>
+</body>
+</html>
